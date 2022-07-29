@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+      <title>Cookie Test by Renan Silva</title>
+      <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+      <script src="/main.js"></script>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="/style.css" rel="stylesheet">
+      <!-- CSS only -->
+   </head>
+   <body>
+      <section class="vh-100 gradient-custom">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+              <div class="card bg-dark text-white" style="border-radius: 1rem;">
+                <div class="card-body p-5 text-center" style="padding: 20px !important">
+                  <div class="mb-md-5 mt-md-4 pb-5" style="margin-bottom: 0rem!important;">
+      
+                        <h2 class="fw-bold mb-2 text-uppercase">Cookie Test</h2>
+                        <p class="text-white-50 mb-5">Testing cookies in JQuery! - by Renan Silva</p>
+        
+                        <div class="form-outline form-white mb-4">
+                        <input type="login" id="login" class="form-control form-control-lg" />
+                        <label class="form-label" for="login">Login</label>
+                        </div>
+        
+                        <div class="form-outline form-white mb-4">
+                        <input type="password" id="password" class="form-control form-control-lg" />
+                        <label class="form-label" for="password">Password</label>
+                        </div>
+
+                        <div class="form-outline form-white mb-4 showInfo" style="display:none">
+                            Login: <span id="login_cookie"></span><br>
+                            Password: <span id="pass_cookie"></span>
+                        </div>
+
+                        <div class="form-outline form-white mb-4 showInfoValidation" style="display:none">
+                             
+                        </div>
+
+                        <div class="form-outline form-white mb-4">
+                            <button style="padding-left: 20px !important;padding-right: 20px !important;" class="btn btn-outline-light btn-small px-5" onclick="addCookie()" type="button">Add Cookie</button>
+                            <button style="padding-left: 20px !important;padding-right: 20px !important;" class="btn btn-outline-light btn-small px-5" onclick="removeCookie()" type="button">Remove Cookie</button>
+                            <button style="padding-left: 20px !important;padding-right: 20px !important;" class="btn btn-outline-light btn-small px-5" onclick="getCookie()" type="button">Get Cookie</button>
+                        </div>    
+      
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> 
+   </body>
+</html>
